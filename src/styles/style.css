@@ -1,0 +1,32 @@
+.App {
+  background-color: #eee;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  max-width: 350px;
+  width: 50vw;
+  height: 80vh;
+  margin: auto;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+}
+
+.container > .h1 {
+  color: rgb(103, 81, 199);
+}
+
+.container > .line {
+  margin: 16px 0px;
+}
+
+.list-item {
+  padding: 16px;
+  margin: 8px;
+  background-color: aliceblue;
+}
