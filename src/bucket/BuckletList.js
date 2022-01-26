@@ -1,17 +1,23 @@
 import React from "react";
-import "../styles/style.css";
+import styled from "styled-components";
 
 const BucketList = (props) => {
-  console.log(props);
+  let list = props.props;
   return (
     <div>
-      {props.list_a.map((item) => (
-        <div key={props.list_a} className="list-item">
+      {list.map((item, index) => (
+        <Wrap key={index}>
           <h3>{item}</h3>
-        </div>
+        </Wrap>
       ))}
     </div>
   );
 };
+
+const Wrap = styled.div`
+  text-align: center;
+  height: 50px;
+  background-color: aliceblue;
+`;
 
 export default BucketList;
